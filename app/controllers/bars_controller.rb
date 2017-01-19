@@ -1,6 +1,10 @@
 class BarsController < ApplicationController
   before_action :set_bar, only: [:show, :edit, :update, :destroy]
 
+  # Shows bars with 3 stars
+  def top
+    @top_bars = Bar.where(stars: 5)
+  end
   # GET /bars
   # GET /bars.json
   def index

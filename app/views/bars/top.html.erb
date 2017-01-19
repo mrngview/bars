@@ -1,0 +1,9 @@
+<h1>Top bars in Brussels</h1>
+
+<ul>
+  <% @top_bars.each do |bar| %>
+    <li><%= bar.name %></li>
+    <li><%= bar.address %></li>
+    <h3>------------------------</h3>
+  <% end %>
+</ul>
