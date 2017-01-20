@@ -1,5 +1,9 @@
 class BarsController < ApplicationController
   before_action :set_bar, only: [:show, :edit, :update, :destroy]
+  before_action :find_bar, only: [:chef]
+
+  def chef # Shows info of the chef of restaurant.
+  end
 
   # Shows bars with 3 stars
   def top
@@ -75,4 +79,7 @@ class BarsController < ApplicationController
     def bar_params
       params.require(:bar).permit(:name, :address, :description, :stars, :chef)
     end
+    def find_bar
+    @bar = Bar.find(params[:id])
+  end
 end
