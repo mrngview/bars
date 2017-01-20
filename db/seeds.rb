@@ -12,21 +12,21 @@ bars_attributes = [
     address:      "Parvis de Saint-Gilles, Bruxelles",
     description:  "Bar, petite restauration, concerts, brunchs, ...",
     stars:        3
-    chef:         "Wislet"
+    # chef:         "Wislet"
   },
   {
     name:         "Le Caberdouche",
     address:      "Place de la liberté, 8. Bruxelles",
     description:  "Une valeur sûre que ce grand bar situé sur une belle place au abords du centre de Bruxelles",
     stars:        5
-    chef:         "Wislet"
+    # chef:         "Wislet"
   },
   {
     name:         "Belga",
     address:      "Place Flagey, Bruxelles",
     description:  "Bar populaire, ambiance parfaite pour expats",
     stars:        3
-    chef:         "No le conozco"
+    # chef:         "No le conozco"
   }
 ]
 bars_attributes.each { |params| Bar.create!(params) }

@@ -5,9 +5,11 @@ one:
   address: MyString
   description: MyText
   stars: 1
+  chef: MyString
 
 two:
   name: MyString
   address: MyString
   description: MyText
   stars: 1
+  chef: MyString
