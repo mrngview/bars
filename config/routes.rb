@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     member do                             # member => bar id in URL. A member route will require an ID, because it acts on a member.
       get 'chef', to: "bars#chef"         # barsController#chef
     end
+    resources :reviews, only: [:new, :create]
   end
 end
