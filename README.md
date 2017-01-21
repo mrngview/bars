@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+<!-- TODO -->
+<!-- Reviews model and routing created for new and create. Still need to create Reviews_controller and its methods -->
