@@ -23,3 +23,5 @@ Things you may want to cover:
 
 * ...
 
+<!-- TODO -->
+<!-- Make create not going to create.html.erb "redirect_to" -->

@@ -1,6 +1,5 @@
 <h3>Add a new review for <%= @bar.name %></h3>
 
-<%= simple_form_for [@bar, @review] do |f| %>
-  <%= f.input :content %>
-  <%= f.submit "add a review", class: "btn btn-primary" %>
-<% end %>
+<%= render 'form', review: @review %>
+
+<%= link_to 'Back', bars_path %>
